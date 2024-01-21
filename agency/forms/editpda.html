@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edit PDA | Portonomics</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../dist/img/Arisenobg.png">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/c9ae27d3fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/c9ae27d3fd.css" crossorigin="anonymous">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://kit.fontawesome.com/c9ae27d3fd.css" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c9ae27d3fd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../Dashboard.html" class="nav-link">Home</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <!-- Logout Code -->
+        <li class="nav-item">
+          <a class="nav-link" href="../examples/login.html">
+            <!-- <i class="fas fa-th-large"></i> -->
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </a>
+        </li>
+        <!-- Logout End -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color:#002639;">
+      <!-- Brand Logo -->
+      <a href="../../Dashboard.html" class="brand-link">
+        <img src="../../dist/img/Arisegrey.png" alt="Portonomics Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Portonomics</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image"
+              style="margin-top: 10px;">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"><strong>Alexander Pierce</strong></a>
+            <a href="#" class="d-block">Vessel Agent</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a href="../masters/enquirymaster.html" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>Enquiry Management</strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../masters/pdalist.html" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>PDA Management</strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>FDA Management</strong>
+              </a>
+            </li>
+            <!-- End of Dashboard -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <p>
+                  <strong>Configuration</strong>
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../forms/createcust.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Customer Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/currencymaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Currency Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createdept.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Department Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createrole.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Role Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/roleaccessright.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Role Access</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/servicemaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Service Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/tariffmaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Tariff Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createuser.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>User Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/vessellist.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Vessel Management</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End Configuration -->
+            <!-- Invoice and Report -->
+            <!-- <li class="nav-item"> -->
+              <!-- <ul class="nav nav-treeview"> -->
+                <li class="nav-item">
+                  <a href="../masters/invoice.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p><strong>Invoices</strong></p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p><strong>Reports</strong></p>
+                  </a>
+                </li>
+              <!-- </ul> -->
+            <!-- </li> -->
+            <!-- End Invoice and Report -->
+            <li class="nav-item">
+              <a href="../calendar.html" class="nav-link">
+                <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+                <p>
+                  <strong>Calendar</strong>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../kanban.html" class="nav-link">
+                <!-- <i class="nav-icon fas fa-columns"></i> -->
+                <p>
+                  <strong>Work Board</strong>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Edit PDA</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="../masters/pdalist.html">Home</a></li>
+                <li class="breadcrumb-item active">Edit PDA</li>
+              </ol>
+            </div>
+          </div>
+      </section>
+      <!-- /.row -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card" style="width: 100%;">
+            <!-- /.card-header -->
+            <div class="form-control-navbar" style="padding: 20PX 25PX; ">
+              <!-- Top Bar Start -->
+              <div class="row">
+                <!-- Col -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Select Enquiry:</label>
+                    <select class="form-control select2" data-placeholde="" disabled>
+                      <Option selected="selected"> E5521550E </Option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>PDA Number:</label>
+                    <select class="form-control select2" data-placeholde="" disabled>
+                      <Option selected="selected"> AUS12956U </Option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Top Bar Ends -->
+              <div class="row">
+                <!-- Col -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Customer Details:</label>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><strong>Customer Name</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; Worldwide Cargo</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Contact Number</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; +9762025665</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Email Id</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; contactus@Worldwidecargo.com</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Alternate Mobile Number</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; +9862025675</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Status</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; In Operations
+                            process</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Comments</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; Pending for finance team approval <br> &nbsp; &nbsp; &nbsp;
+                            &nbsp; Expeted date for approval 28/02/2023.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Vessel Details:</label>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td><strong>Arrive Date|Time</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; 20/02/2023 09:38:25</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Departure Date|Time</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; 26/02/2023 22:23:05</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Vessel No | Name</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp;AE156US | Shipshine </td>
+                        </tr>
+                        <tr>
+                          <td><strong>Ship Type</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; Container Ship</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Gross Tonnage</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp;7000</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Summer Deadweight(t)</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp; 8980</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Length Overall (m)</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp;4589</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Beam (m)</strong></td>
+                          <td>&nbsp; &nbsp; &nbsp; &nbsp; 2258</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Draught (m)</strong></td>
+                          <td>&nbsp; &nbsp; &nbsp; &nbsp; 80</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Registered Owner</strong></td>
+                          <td> &nbsp; &nbsp; &nbsp; &nbsp;Dewen McCoy</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- div end here -->
+              </div>
+            </div>
+            <div class="card-body table-responsive p-0" style="background-color: #252525;color: #f1f1f1;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6" style="width: 80%;padding-top: 10px;">
+                    <h5><strong>Services</strong></h5>
+                  </div>
+                  <div class="col-md-6" style="width: 50px;">
+                    <!-- Trigger the modal with a button -->
+                    <button type="button" class="btn btn-block btn-outline-light" data-toggle="modal"
+                      data-target="#myModal" style="width: 30%; margin-left: 70%;"><strong>Add
+                        Services</strong></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body table-responsive p-0" style="background-color: #252525;color: #f1f1f1;">
+              <!-- Pop Up for Services -->
+              <div class="container" style="color: #000;">
+                <!-- <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-6" style="width: 80%;padding-top: 10px;">
+                      <h5><strong>Services</strong></h5>
+                    </div> -->
+                <!-- <div class="col-md-6" style="width: 50px;"> -->
+                <!-- Trigger the modal with a button -->
+                <!-- <button type="button" class="btn btn-block btn-outline-primary" data-toggle="modal"
+                        data-target="#myModal" style="width: 30%; margin-left: 70%;"><strong>Add
+                          Services</strong></button> -->
+                <!-- </div>
+                  </div> -->
+              </div>
+
+              <!-- Modal Pop Up -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header"
+                      style="background-color: #002639; color: azure;padding-left: 40%; padding-right: 40%;">
+                      <button type="button" class="close" data-dismiss="modal"></button>
+                      <h4 class="modal-title">Add Services</h4>
+                    </div>
+                    <div class="modal-body" style="background-color: #fff; color: #252525;">
+                      <div class="card-body">
+                        <div class="row">
+                          <!-- Col -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <!-- 2-2 -->
+                              <div class="row" style="width: 150%;">
+                                <!-- Col -->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                      <option value="" selected>Select Services</option>
+                                      <option>APM Terminal</option>
+                                      <option>Maritime Administration</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <!-- Col -->
+                                <div class="col-md-6">
+                                  <!-- <label></label> -->
+                                  <div class="form-group">
+                                    <select name="" id="" class="form-control">
+                                      <option value="" selected>Select Sub Services</option>
+                                      <option> Mooring</option>
+                                      <option>Arrival Departure</option>
+                                      <option>Cleaning</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group" style="width: 30%; margin-left: 60%;">
+                              <button type="button" class="btn btn-primary">Search</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap">
+                          <thead>
+                            <tr>
+                              <th style="background-color: #252525;color: #fff;">Category</th>
+                              <th style="background-color: #252525;color: #fff;">Service</th>
+                              <th style="background-color: #252525;color: #fff;">Charge Type</th>
+                              <th style="background-color: #252525;color: #fff;">Charge On</th>
+                              <th style="background-color: #252525;color: #fff;">Range</th>
+                              <th style="background-color: #252525;color: #fff;">Rate</th>
+                              <th style="background-color: #252525;color: #fff;">Currency</th>
+                              <!-- <th style="background-color: #252525;color: #fff;">Status</th> -->
+                              <th style="background-color: #252525;color: #fff;">Select</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>APM Terminal</td>
+                              <td>Mooring</td>
+                              <td>Range</td>
+                              <td>Volume</td>
+                              <td>1001-5000 </td>
+                              <td>41</td>
+                              <td>USD</td>
+                              <td>
+                                <input type="checkbox">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>APM Terminal</td>
+                              <td>Mooring</td>
+                              <td>Range</td>
+                              <td>Volume</td>
+                              <td>5001-10000 </td>
+                              <td>61</td>
+                              <td>USD</td>
+                              <td>
+                                <input type="checkbox" checked>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>APM Terminal</td>
+                              <td>Mooring</td>
+                              <td>Range</td>
+                              <td>Volume</td>
+                              <td>10001-20000 </td>
+                              <td>81</td>
+                              <td>USD</td>
+                              <!-- <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <strong>...</strong>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">PDA Initiated</a></li>
+                                    <li><a class="dropdown-item" href="#">Awaiting Finance Approval</a></li>
+                                    <li><a class="dropdown-item" href="#">Awaiting Advance payment</a></li>
+                                    <li><a class="dropdown-item" href="#">In Operations process</a></li>
+                                  </ul>
+                                </div>
+                              </td> -->
+                              <td>
+                                <input type="checkbox" checked>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Maritime Administration</td>
+                              <td>Arrival Departure</td>
+                              <td>Range</td>
+                              <td>GRT</td>
+                              <td>100-1000 </td>
+                              <td>107</td>
+                              <td>USD</td>
+                              <td>
+                                <input type="checkbox" checked>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Maritime Administration</td>
+                              <td>Arrival Departure</td>
+                              <td>Range</td>
+                              <td>GRT</td>
+                              <td>1001-5000 </td>
+                              <td>195</td>
+                              <td>USD</td>
+                              <td>
+                                <input type="checkbox" checked>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row" style="margin-top: 10px;">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"
+                              style="width: 30%;">Add</button>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"
+                              style="margin-left: 65%;width: 30%;">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Of Modal Pop Up -->
+            </div>
+            <!-- End of Pop Up for Services -->
+            <div class="card-body table-responsive p-0">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Service</th>
+                    <th>Charge Type</th>
+                    <th>Charge On</th>
+                    <th>Range</th>
+                    <th>Rate</th>
+                    <th>Currency</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <tr>
+                      <td>APM Termina</td>
+                      <td>Mooring</td>
+                      <td>Range</td>
+                      <td>Volume</td>
+                      <td>1001-5000 </td>
+                      <td>41</td>
+                      <td>USD</td>
+                      <td>
+                        <a href="#"><img src="../../dist/img/Edit.png" alt="Edit" style="width: 25px; height: auto;"></a>
+                        <a href="#"><img src="../../dist/img/Delete.png" alt="Delete" style="width: 25px; height: auto;"></a>
+                      </td>
+                    </tr> -->
+                  <tr>
+                    <td>APM Terminal</td>
+                    <td>Mooring</td>
+                    <td>Range</td>
+                    <td>Volume</td>
+                    <td>5001-10000 </td>
+                    <td>61</td>
+                    <td>USD</td>
+                    <td>
+                      <!-- <a href="#"><img src="../../dist/img/Edit.png" alt="Edit" style="width: 25px; height: auto;"></a> -->
+                      <a href="#"><img src="../../dist/img/Delete.png" alt="Delete"
+                          style="width: 25px; height: auto;"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>APM Terminal</td>
+                    <td>Mooring</td>
+                    <td>Range</td>
+                    <td>Volume</td>
+                    <td>10001-20000 </td>
+                    <td>81</td>
+                    <td>USD</td>
+                    <td>
+                      <!-- <a href="#"><img src="../../dist/img/Edit.png" alt="Edit" style="width: 25px; height: auto;"></a> -->
+                      <a href="#"><img src="../../dist/img/Delete.png" alt="Delete"
+                          style="width: 25px; height: auto;"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Maritime Administration</td>
+                    <td>Arrival Departure</td>
+                    <td>Range</td>
+                    <td>GRT</td>
+                    <td>100-1000 </td>
+                    <td>107</td>
+                    <td>USD</td>
+                    <td>
+                      <!-- <a href="#"><img src="../../dist/img/Edit.png" alt="Edit" style="width: 25px; height: auto;"></a> -->
+                      <a href="#"><img src="../../dist/img/Delete.png" alt="Delete"
+                          style="width: 25px; height: auto;"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Maritime Administration</td>
+                    <td>Arrival Departure</td>
+                    <td>Range</td>
+                    <td>GRT</td>
+                    <td>1001-5000 </td>
+                    <td>1950</td>
+                    <td>USD</td>
+                    <td>
+                      <!-- <a href="#"><img src="../../dist/img/Edit.png" alt="Edit" style="width: 25px; height: auto;"></a> -->
+                      <a href="#"><img src="../../dist/img/Delete.png" alt="Delete"
+                          style="width: 25px; height: auto;"></a>
+                    </td>
+                  </tr>
+                  <tr style="background-color: #D9D9D9;">
+                    <td colspan="4">&nbsp;</td>
+                    <td><strong>Total Cost:</strong></td>
+                    <td><strong>2199 USD</strong></td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">&nbsp;</td>
+                    <td>
+                      Discount in %
+                    </td>
+                    <td colspan="3">
+                      <input type="number" class="form-control" style="width: 90px !important;" placeholder="10%"
+                        max="100" min="0" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4">&nbsp;</td>
+                    <td>
+                      Discount value
+                    </td>
+                    <td colspan="3">
+                      <label>220 USD</label>
+                    </td>
+                  </tr>
+                  <tr style="background-color: #D9D9D9;">
+                    <td colspan="4">&nbsp;</td>
+                    <td><strong>Final Cost:</strong></td>
+                    <td><strong>1979 USD</strong></td>
+                    <td colspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><label>Note Or Disclaimers</label></td>
+                    <td colspan="3">
+                      <textarea name="note" class="form-control" id="note" cols="40" rows="3">95% of the dues need to be cleared for further process.
+                      </textarea>
+                    </td>
+                    <td><strong>Terms & Condition</strong></td>
+                    <td colspan="3">
+                      <textarea name="note" class="form-control" id="note" cols="40" rows="3"></textarea><br>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="">
+                      <label for="">Upload Documents</label>
+                    </td>
+                    <td colspan="2">
+                      <input type="file">
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                      <label for="datemax">Valid till date</label>
+                    </td>
+                    <td colspan="3">
+                      <input type="date" class="form-control" id="datemax" max="20-03-2023">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <button class="btn btn-default">
+                        Save Draft
+                      </button>
+                      <button class="btn btn-primary">
+                        Submit For Approval
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- end of PDA Genaration Table -->
+            </div>
+            <!-- /.card-body -->
+
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 1.0
+    </div>
+    <strong>Copyright &copy; 2014-2023 <a href="#">Portonomics</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+</body>
+
+</html>

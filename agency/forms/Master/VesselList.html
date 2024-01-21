@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vessel List | Portonomics</title>
+  <!-- Fevicon -->
+  <link rel="icon" type="image/x-icon" href="../../dist/img/Arisenobg.png">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/c9ae27d3fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/c9ae27d3fd.css" crossorigin="anonymous">
+  <!-- bootstrap 5.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+  <style>
+    td {
+      width: 10%;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked+.slider {
+      background-color: #00c33a;
+    }
+
+    input:focus+.slider {
+      box-shadow: 0 0 1px #00c33a;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(16px);
+      -ms-transform: translateX(16px);
+      transform: translateX(16px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../Dashboard.html" class="nav-link">Home</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <!-- Logout Code -->
+        <li class="nav-item">
+          <a class="nav-link" href="../examples/login.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </a>
+        </li>
+        <!-- Logout End -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color:#002639;">
+      <!-- Brand Logo -->
+      <a href="../../Dashboard.html" class="brand-link">
+        <img src="../../dist/img/Arisegrey.png" alt="Portonomics Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light"><strong>Portonomics</strong></span>
+      </a>
+
+      <!-- Side Menu bar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" style="padding-top: 10px;"
+              alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"><strong>Alexander Pierce</strong><br>
+              <p>Vessel Agent</p>
+            </a>
+          </div>
+        </div>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <Strong>Dashboard</Strong>
+              </a>
+            </li>
+            <!-- Start Of Enquiry -->
+            <li class="nav-item">
+              <a href="../../agency/Masters/EnquiryMaster.html" class="nav-link">
+                <p>
+                  Enquiry Management
+                </p>
+              </a>
+            </li>
+            <!-- End Of Enquiry -->
+            <!-- Startof PDA -->
+            <li class="nav-item">
+              <a href="../../agency/masters/PDAList.html" class="nav-link">
+                <p>
+                  PDA Management
+                  <!-- <i class="right fas fa-angle-left"></i> -->
+                </p>
+              </a>
+            </li>
+            <!-- Start of FDA -->
+            <li class="nav-item">
+              <a href="../../agency/forms/FDAList.html" class="nav-link">
+                <p>
+                  FDA Management
+                  <!-- <i class="right fas fa-angle-left"></i> -->
+                </p>
+              </a>
+            </li>
+            <!--End of FDA -->
+            <!-- Start of Configuration -->
+            <li class="nav-item">
+              <a href="../../agency/Masters/ServiceMaster.html" class="nav-link">
+                <p>Service Catalogue</p>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="../../agency/Masters/TariffMaster.html" class="nav-link">
+                <p>Tarrif Configuration</p>
+              </a>
+            </li>
+            <!-- End of Configuration -->
+            <!-- Start of My Customer -->
+            <li class="nav-item">
+              <a href="../../agency/Froms/NewCustEnq.html" class="nav-link">
+                <p>
+                  Customer Management
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../../pages/Froms/Invoices.html" class="nav-link">
+                <p>Invoices</p>
+              </a>
+            </li>
+            <!-- End of My Customer -->
+            <!-- Start Of Calender -->
+            <li class="nav-item">
+              <a href="../../agency/calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p><strong>Calendar</strong></p>
+              </a>
+            </li>
+            <!-- End Of Calender -->
+            <!-- Start Of WorkBoard -->
+            <li class="nav-item">
+              <a href="../../agency/kanban.html" class="nav-link">
+                <i class="nav-icon fas fa-columns"></i>
+                <p><strong>Work Board</strong></p>
+              </a>
+            </li>
+            <!-- End Of WorkBoard -->
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+    
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Vessel List</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Vessel List</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="btn-group" style="padding:10px 10px;">
+                  <button type="button" class="btn btn-outline-dark">
+                    <img src="../../dist/img/filter.png" alt="Filter" style="height: 20px; width: auto;">
+                  </button>
+                  <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Filter</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">PDA No.</a></li>
+                    <li><a class="dropdown-item" href="#">Enquiry No.</a></li>
+                    <li><a class="dropdown-item" href="#">Customer</a></li>
+                    <li><a class="dropdown-item" href="#">Vessel</a></li>
+                  </ul>
+                  <button class="btn btn-primary" style="margin-left: 67%;margin-right: 20px;border-radius: 5px;">
+                    <a href="../forms/CreatePDA.html" style="color: aliceblue;">Create Vessel
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-primary" style="border-radius: 5px;">Action</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Action</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Export PDF</a></li>
+                    <li><a class="dropdown-item" href="#">Export Excel</a></li>
+
+                  </ul>
+                </div>
+                <hr>
+                <!-- </div> -->
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>Vessel No.</th>
+                        <th>Vessel Type</th>
+                        <th>Customer Name</th>
+                        <th>IMO</th>
+                        <th>Gross Tonnage</th>
+                        <th>Length Overall (m)</th>
+                        <th>Draught (m)</th>
+                        <th>Ship Type</th>
+                        <th>Summer Deadweight (t)</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>AE0156US</td>
+                        <td>Cargo</td>
+                        <td>Worldwide Cargo</td>
+                        <td>9186924</td>
+                        <td>43022</td>
+                        <td>150</td>
+                        <td>12.5</td>
+                        <td>Bulk Carrier</td>
+                        <td>77828</td>
+                        <td>
+                          <a href="#">
+                            <img src="../../dist/img/Edit.png" alt="Edit" style="width: 20px;height: auto;">
+                          </a>
+                          <a href="#">
+                            <img src="../../dist/img/Send.png" onclick="Send()" alt="send"
+                              style="width: 20px;height: auto;">
+                          </a>
+                          <a href="../Masters/Timeline.html">
+                            <img src="../../dist/img/View.png" alt="Track PDA" style="width: 20px;height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- Entry 2 -->
+                      <tr>
+                        <td>A59887U</td>
+                        <td>FSO AFRICA</td>
+                        <td>Austen Maritime</td>
+                        <td>9224764</td>
+                        <td>236638</td>
+                        <td>378</td>
+                        <td>68</td>
+                        <td>FSO</td>
+                        <td>432023</td>
+                        <td>
+                          <a href="#">
+                            <img src="../../dist/img/Edit.png" alt="Edit" style="width: 20px;height: auto;">
+                          </a>
+                          <a href="#">
+                            <img src="../../dist/img/Send.png" onclick="Send()" alt="send"
+                              style="width: 20px;height: auto;">
+                          </a>
+                          <a href="../Masters/Timeline.html">
+                            <img src="../../dist/img/View.png" alt="Track PDA" style="width: 20px;height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                      <!-- Entry 3 -->
+                      <tr>
+                        <td>C59567U</td>
+                        <td>FSO AFRICA</td>
+                        <td>Johann Logistics</td>
+                        <td>9839131</td>
+                        <td>236583</td>
+                        <td>400</td>
+                        <td>61</td>
+                        <td>Container Ship</td>
+                        <td>220766</td>
+                        <td>
+                          <a href="#">
+                            <img src="../../dist/img/Edit.png" alt="Edit" style="width: 20px;height: auto;">
+                          </a>
+                          <a href="#">
+                            <img src="../../dist/img/Send.png" onclick="Send()" alt="send"
+                              style="width: 20px;height: auto;">
+                          </a>
+                          <a href="../Masters/Timeline.html">
+                            <img src="../../dist/img/View.png" alt="Track PDA" style="width: 20px;height: auto;">
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 1.0
+      </div>
+      <strong>Copyright &copy; 2014-2023 <a href="#">Portonomics</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../../plugins/jszip/jszip.min.js"></script>
+  <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- Page specific script -->
+  <script>
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      $('#example2').DataTable({
+        "paging": true,
+        "lengthChange": false,
+        "searching": false,
+        "ordering": true,
+        "info": true,
+        "autoWidth": false,
+        "responsive": true,
+      });
+    });
+  </script>
+  <script>
+    function Send() {
+      alert("Send to finance for approval!");
+    }
+  </script>
+</body>
+
+</html>

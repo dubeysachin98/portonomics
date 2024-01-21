@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Track PDA | Portonomics</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../dist/img/Arisenobg.png">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/c9ae27d3fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/c9ae27d3fd.css" crossorigin="anonymous">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- AdminLTE css -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="../../Dashboard.html" class="nav-link">Home</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <!-- Message Start -->
+              <div class="media">
+                <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                </div>
+              </div>
+              <!-- Message End -->
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+        </li>
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i> 4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i> 8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i> 3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <!-- Logout Code -->
+        <li class="nav-item">
+          <a class="nav-link" href="../examples/login.html">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </a>
+        </li>
+        <!-- Logout End -->
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color:#002639;">
+      <!-- Brand Logo -->
+      <a href="../../Dashboard.html" class="brand-link">
+        <img src="../../dist/img/Arisegrey.png" alt="Portonomics Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Portonomics</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user1-128x128.jpg" class="img-circle elevation-2" alt="User Image"
+              style="margin-top: 10px;">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"><strong>Alexander Pierce</strong></a>
+            <a href="#" class="d-block">Vessel Agent</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Dashboard -->
+            <li class="nav-item">
+              <a href="../masters/enquirymaster.html" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>Enquiry Management</strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../masters/pdalist.html" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>PDA Management</strong>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <strong>FDA Management</strong>
+              </a>
+            </li>
+            <!-- End of Dashboard -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <p>
+                  <strong>Configuration</strong>
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="../forms/createcust.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Customer Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/currencymaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Currency Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createdept.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Department Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createrole.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Role Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/roleaccessright.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Role Access</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/servicemaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Service Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/tariffmaster.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Tariff Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../forms/createuser.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>User Management</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="../masters/vessellist.html" class="nav-link">
+                    <!-- <i class="far fa-circle nav-icon"></i> -->
+                    <p>Vessel Management</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- End Configuration -->
+            <!-- Invoice and Report -->
+            <!-- <li class="nav-item"> -->
+            <!-- <ul class="nav nav-treeview"> -->
+            <li class="nav-item">
+              <a href="../masters/invoice.html" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <p><strong>Invoices</strong></p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <!-- <i class="far fa-circle nav-icon"></i> -->
+                <p><strong>Reports</strong></p>
+              </a>
+            </li>
+            <!-- </ul> -->
+            <!-- </li> -->
+            <!-- End Invoice and Report -->
+            <li class="nav-item">
+              <a href="../calendar.html" class="nav-link">
+                <!-- <i class="nav-icon far fa-calendar-alt"></i> -->
+                <p>
+                  <strong>Calendar</strong>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../kanban.html" class="nav-link">
+                <!-- <i class="nav-icon fas fa-columns"></i> -->
+                <p>
+                  <strong>Work Board</strong>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>PDA Tracking</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="../masters/pdalist.html">Home</a></li>
+                <li class="breadcrumb-item active">Create PDA </li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+
+          <!-- Timelime example  -->
+          <div class="row">
+            <div class="col-md-12">
+              <!-- The time line -->
+              <div class="timeline">
+                <!-- timeline time label -->
+                <div class="time-label">
+                  <span class="bg-blue">05 Feb. 2023</span>
+                </div>
+                <!-- /.timeline-label -->
+                <!-- timeline item -->
+                <div>
+                  <i class="fas fa-envelope bg-blue"></i>
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                    <h3 class="timeline-header"><a href="#">PDA Generated</a> sent for approval</h3>
+
+                    <div class="timeline-body">
+                      PDA sent to finance department for payment approval.
+                    </div>
+                    <!-- <div class="timeline-footer">
+                      <a class="btn btn-primary btn-sm">Acknowledge</a>
+                      <a class="btn btn-danger btn-sm">Raise Dispute</a>
+                    </div> -->
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <!-- timeline time label -->
+                <div class="time-label">
+                  <span class="bg-blue">06 Feb. 2023</span>
+                </div>
+                <!-- /.timeline-label -->
+                <!-- timeline item -->
+                <div>
+                  <i class="fa fa-check bg-blue"></i>
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i>1 days after</span>
+                    <h3 class="timeline-header"><a href="#">PDA Approved</a> by finance</h3>
+                    <div class="timeline-body">
+                      Sent to customer for approval.
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <!-- timeline time label -->
+                <div class="time-label">
+                  <span class="bg-blue">06 Feb. 2023</span>
+                </div>
+                <!-- /.timeline-label -->
+                <!-- timeline item -->
+                <div>
+                  <i class="fa fa-check bg-blue"></i>
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i>1 days after</span>
+                    <h3 class="timeline-header"><a href="#">PDA Approved</a> by Customer</h3>
+                    <div class="timeline-body">
+                      Payment Initiated by customer.
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <!-- timeline time label -->
+                <div class="time-label">
+                  <span class="bg-blue">09 Feb. 2023</span>
+                </div>
+                <!-- /.timeline-label -->
+                <!-- timeline item -->
+                <div>
+                  <i class="fa fa-check bg-blue"></i>
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i>3 days after</span>
+                    <h3 class="timeline-header"><a href="#">Payment received</a> Acknowledgement sent to customer</h3>
+                    <div class="timeline-body">
+                      Acknowledgement sent to customer.
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <!-- timeline item -->
+                <!-- <div class="time-label">
+                  <span class="bg-blue">16 Feb. 2023</span>
+                </div> -->
+                <!-- <div>
+                  <i class="fas fa-check bg-blue"></i>
+
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i> 12:05</span>
+                    <h3 class="timeline-header"><a href="#">Payment</a> recived from client</h3>
+
+                    <div class="timeline-body">
+                      Final payment done in 10 days after Invoice sent.
+                    </div>
+                    <div class="timeline-footer">
+                      <a class="btn btn-primary btn-sm">Send Acknowledgement</a> -->
+                <!-- <a class="btn btn-danger btn-sm">Check Status</a> -->
+                <!-- </div>
+                  </div>
+                </div>  -->
+                <!-- END timeline item -->
+                <!-- timeline item -->
+                <div class="time-label">
+                  <span class="bg-blue">22 Feb. 2023</span>
+                </div>
+                <div>
+                  <i class="fas fa-check bg-blue"></i>
+
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i>15 days later</span>
+                    <h3 class="timeline-header"><a href="#">Ship</a> Arrived</h3>
+
+                    <div class="timeline-body">
+                      Ship arrived at port.
+                    </div>
+                    <div class="timeline-footer">
+                      <!-- <a class="btn btn-primary btn-sm">Send Acknowledgement</a> -->
+                      <!-- <a class="btn btn-danger btn-sm">Check Status</a> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <!-- timeline item -->
+                <div class="time-label">
+                  <span class="bg-blue">22 Feb. 2023</span>
+                </div>
+                <div>
+                  <i class="fas fa-check bg-blue"></i>
+
+                  <div class="timeline-item">
+                    <span class="time"><i class="fas fa-clock"></i>15:25</span>
+                    <h3 class="timeline-header"><a href="#">Arrival Departure</a> clearance done.</h3>
+
+                    <div class="timeline-body">
+                      <!-- Final payment done in 10 days after Invoice sent. -->
+                      Arrival Departure clearance done.
+                    </div>
+                    <div class="timeline-footer">
+                      <!-- <a class="btn btn-primary btn-sm">Send Acknowledgement</a> -->
+                      <!-- <a class="btn btn-danger btn-sm">Check Status</a> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- END timeline item -->
+                <div>
+                  <i class="fas fa-clock bg-blue"></i>
+                </div>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+        </div>
+        <!-- /.timeline -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-block">
+        <b>Version</b> 1.0
+      </div>
+      <strong>Copyright &copy; 2014-2023 <a href="../../Dashboard.html">Portonomics</a>.</strong> All rights reserved.
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+</body>
+
+</html>
